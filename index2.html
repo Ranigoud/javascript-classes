@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <!-- <script  defer src="index.js"></script> -->
+    
+    
+</head>
+<body>
+    <h1>Async vs defer is script tags</h1>
+    <script>
+       /* async function tes(){
+      console.log('inside up1')
+    let res=await fetch("test.text");//Response {type: 'basic', url: 'http://127.0.0.1:5500/test.text', redirected: false, status: 200, ok: true, …}
+     //console.log(res)
+       console.log("inside down 2")                
+     let finlres=await res.text()
+     console.log(finlres)//Hai This is Ajax asyhnchrownouse javascript and xml
+   }
+tes()
+console.log("out side")*///function out side execution run avutundi
+// -------------------------------------------------------
+// async vs defer:
+//pure function
+    // two concepts:bayata una data ni modify cheyakunte,function ki argument pass cheyakunte
+    
+    //let x=10 not modify
+    function pure(a,b)
+    {
+        return a*b;
+        a=+a//note modify
+
+    }
+    console.log(pure(7,6))//same out put
+    console.log(pure(6,7))//same out put*/
+    //impure------------------------------ 
+    function pure(a,b)
+    {
+        return a*b+Math.random();
+       
+
+    }
+    console.log(pure(7,6))
+    console.log(pure(7,6))
+    console.log(pure(7,6))
+    // -----------------------------------------------
+    // classes in js:
+     class mobiles//classname
+     {
+        constructor(n,p,r){//parameters or properties
+        this.name=n;
+        this.price=p;   //initilization
+        this.ram=r;
+     }
+     //getter method in get keyword
+     get getName()
+     {
+        return "mobile name:"+this.name;
+     }
+        
+     //setter method:it can use set key word
+       set priceSet(p)
+       {
+        if(p>=0)
+       {
+        alert("price connt be lessthen 0 ")
+       }
+       else{
+        this.price=p;
+       }
+       }
+       //update method
+     
+     updateRam(uram){
+        this.ram=uram
+     }
+    } 
+        let m1=new mobiles("vivoy20",2000,"5gb")//with new keyword through object creation
+        let m2= new mobiles("realme pro",18000,"4gb")
+        let m3=new mobiles("oppo",20000,"4gb")
+    
+        // m2.updateRam("6gb")
+        console.log(m1.priceSet=25000)
+        console.log(m1.getName)
+    //    console.log(m1)
+    //    console.log(m3)
+
+
+
+
+
+
+
+      
+
+
+                                    
+ 
+
+                                                              
+
+
+  
+  
+  
+
+           
+       </script>   
+    
+</body>
+</html>
+    </script>
+   
+</body>
+</html>
+
